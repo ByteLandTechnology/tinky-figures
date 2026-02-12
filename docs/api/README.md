@@ -1,3 +1,7 @@
+**tinky-figures**
+
+---
+
 # tinky-figures
 
 Unicode symbols with ASCII fallbacks for tinky applications - matching the figures npm package character set.
