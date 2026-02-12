@@ -1,6 +1,6 @@
 {
   "name": "tinky-figures",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unicode symbols with ASCII fallbacks for tinky applications",
   "keywords": [
     "tinky",

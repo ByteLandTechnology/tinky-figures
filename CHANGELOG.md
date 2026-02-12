@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/ByteLandTechnology/tinky-figures/compare/v1.0.0...v1.0.1) (2026-02-12)
+
+### 🐛 Bug Fixes
+
+- add explicit .js extensions for esm imports ([e0f19b2](https://github.com/ByteLandTechnology/tinky-figures/commit/e0f19b254400b3b06000626c3077d32e978c2a82))
+
 ## 1.0.0 (2026-02-12)
 
 ### ✨ Features
