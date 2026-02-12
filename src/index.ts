@@ -7,6 +7,6 @@
  * @packageDocumentation
  */
 
-export { useFigures, isUnicodeSupported } from "./hooks/useFigures";
-export type { FiguresMap } from "./types/figures";
-export { unicodeFigures, asciiFigures } from "./data";
+export { useFigures, isUnicodeSupported } from "./hooks/useFigures.js";
+export type { FiguresMap } from "./types/figures.js";
+export { unicodeFigures, asciiFigures } from "./data/index.js";

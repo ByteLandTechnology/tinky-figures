@@ -1,2 +1,2 @@
-export { unicodeFigures } from "./unicode";
-export { asciiFigures } from "./ascii";
+export { unicodeFigures } from "./unicode.js";
+export { asciiFigures } from "./ascii.js";

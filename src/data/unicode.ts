@@ -1,4 +1,4 @@
-import { FiguresMap } from "../types/figures";
+import { FiguresMap } from "../types/figures.js";
 
 /**
  * Full Unicode character set.

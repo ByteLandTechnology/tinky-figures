@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useApp } from "tinky";
-import { FiguresMap } from "../types/figures";
-import { unicodeFigures } from "../data/unicode";
-import { asciiFigures } from "../data/ascii";
+import { FiguresMap } from "../types/figures.js";
+import { unicodeFigures } from "../data/unicode.js";
+import { asciiFigures } from "../data/ascii.js";
 
 /**
  * Detect if Unicode is supported in the current terminal environment.

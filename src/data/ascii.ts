@@ -1,4 +1,4 @@
-import { FiguresMap } from "../types/figures";
+import { FiguresMap } from "../types/figures.js";
 
 /**
  * Fallback character set for environments that do not support full Unicode.
