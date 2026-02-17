@@ -53,13 +53,12 @@
           },
           {
             "type": "chore",
-            "scope": "deps",
-            "release": "patch"
+            "scope": "release",
+            "release": false
           },
           {
             "type": "chore",
-            "scope": "release",
-            "release": false
+            "release": "patch"
           }
         ]
       }
