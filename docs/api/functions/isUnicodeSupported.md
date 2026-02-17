@@ -20,15 +20,15 @@ Adapted from `sindresorhus/is-unicode-supported`.
 
 ### platform?
 
-`string` = `process.platform`
+`string`
 
-The operating system platform (default: `process.platform`).
+The operating system platform.
 
 ### env?
 
-`Record`\<`string`, `string` \| `undefined`\> = `process.env`
+`Record`\<`string`, `string` \| `undefined`\>
 
-The environment variables object (default: `process.env`).
+The environment variables object.
 
 ## Returns
 

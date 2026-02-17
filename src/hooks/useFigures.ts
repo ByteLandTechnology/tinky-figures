@@ -13,39 +13,40 @@ import { asciiFigures } from "../data/ascii.js";
  *
  * Adapted from `sindresorhus/is-unicode-supported`.
  *
- * @param platform - The operating system platform (default: `process.platform`).
- * @param env - The environment variables object (default: `process.env`).
+ * @param platform - The operating system platform.
+ * @param env - The environment variables object.
  * @returns `true` if Unicode is supported, `false` otherwise.
  */
 export function isUnicodeSupported(
-  platform: string = process.platform,
-  env: Record<string, string | undefined> = process.env,
+  platform?: string,
+  env?: Record<string, string | undefined>,
 ): boolean {
   // If explicitly set via environment variable, use that
-  if (env.TINKY_UNICODE === "true") {
+  if (env?.TINKY_UNICODE === "true") {
     return true;
   }
-  if (env.TINKY_UNICODE === "false") {
+  if (env?.TINKY_UNICODE === "false") {
     return false;
   }
 
-  const { TERM, TERM_PROGRAM } = env;
+  const TERM = env?.TERM;
+  const TERM_PROGRAM = env?.TERM_PROGRAM;
 
   if (platform !== "win32") {
     return TERM !== "linux"; // Linux console (kernel)
   }
 
   return (
-    Boolean(env.WT_SESSION) || // Windows Terminal
-    Boolean(env.TERMINUS_SUBLIME) || // Terminus (<0.2.27)
-    env.ConEmuTask === "{cmd::Cmder}" || // ConEmu and cmder
+    Boolean(env?.WT_SESSION) || // Windows Terminal
+    Boolean(env?.TERMINUS_SUBLIME) || // Terminus (<0.2.27)
+    env?.ConEmuTask === "{cmd::Cmder}" || // ConEmu and cmder
     TERM_PROGRAM === "Terminus-Sublime" ||
     TERM_PROGRAM === "vscode" ||
     TERM === "xterm-256color" ||
     TERM === "alacritty" ||
     TERM === "rxvt-unicode" ||
     TERM === "rxvt-unicode-256color" ||
-    env.TERMINAL_EMULATOR === "JetBrains-JediTerm"
+    env?.TERMINAL_EMULATOR === "JetBrains-JediTerm"
   );
 }
 
