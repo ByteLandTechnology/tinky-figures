@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/ByteLandTechnology/tinky-figures/compare/v1.0.1...v1.0.2) (2026-02-17)
+
+### 🔧 Chores
+
+- avoid direct Node process references ([eb317ee](https://github.com/ByteLandTechnology/tinky-figures/commit/eb317ee259848ccea1add2bc93f15bf2f84e295f))
+- release patch for all chore commits ([e2ee5a8](https://github.com/ByteLandTechnology/tinky-figures/commit/e2ee5a8efdb13e5ecdd492c1460170ecf44676b4))
+
 ## [1.0.1](https://github.com/ByteLandTechnology/tinky-figures/compare/v1.0.0...v1.0.1) (2026-02-12)
 
 ### 🐛 Bug Fixes
